@@ -1,6 +1,6 @@
 Algol68C Release 1.3039 for IBM System/370-compatible mainframes
 ================================================================
-
+<pre>
 ***********************************************************************
 * (C) 2012 Copyright C.J. Cheney, S.R. Bourne and others              *
 *                                                                     *
@@ -151,3 +151,4 @@ dataset. For the avoidance of doubt, the AWS tape uses the standard
 AWS format, whereas individual datasets (other than the first) on the
 distribution tape are packed using the modified AWS format.
 
+</pre>
