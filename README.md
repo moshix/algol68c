@@ -13,6 +13,41 @@ Algol68C Release 1.3039 for IBM System/370-compatible mainframes
 * from its supply or use.                                             *
 ***********************************************************************
 
+A Hercules CCKD 3330 DASD image file and a README file, and an AWS tape image and a README file. Only one of these two alternative files is required.
+
+This version of Algol68C is considerably enhanced and has many bugs fixed compared to the version that has been available "in the wild" for many years. It corresponds (approximately) to that in use at Cambridge University's academic computing service on its IBM 3084 in 1995. Many of those enhancements were to reduce the number of incompatibilities between Algol68C and the language defined by the Revised Report on the Algorithmic Language Algol 68 (Van Wijngaarden et al., 1975), and to support the Report on the Standard Hardware Representation for ALGOL 68 (Hansen and Boom, 1976).
+
+The software includes a copy of the Algol68C Reference Manual (in XHTML with CSS, enabling it to be displayed in modern web browsers).
+
+The software is relevant only to hobbyists who are already running an earlier version; it is not intended for "production use". It is provided on the conditions that all use of the software is at the user's own risk and no person or organisation can be held liable in any way for any outcome arising from use of the software.
+
+Although no guarantees can be given for the timescale for providing fixes, if at all, bug reports will be appreciated and can be emailed to ( email is lost ???)
+
+The roadmap for continued development, but without any commitment to timescales, is:
+
+Provision of bug reporting and bug status interrogation.
+Algol68C running native on Microsoft Windows(TM) and Linux 32-bit platforms.
+Source-level run-time diagnostics.
+Garbage collection of the heap.
+Many people have contributed to the development of Algol68C over the years, of whom a few are mentioned in the Wikipedia article on Algol68C. The contributions of all of them are acknowledged with thanks.
+
+Summary of enhancements in Release 1.3039
+         
+-'put' and 'get' are available for simple modes and COMPL.
+-PRAGMATs now provide control over compilation features.
+-POINT and UPPER stropping are available (in addition to CASESTROP and QUOTESTROP).
+-Apostrophe is used as the string escape character when POINT or UPPER stropping is in effect.
+-Layout is permitted in denotations and tags, subject to RESTRICTTDF and NORESTRICTTDF pragmats.
+-Improvements to the accuracy and speed of REAL computations and the conversion of REAL values to/from STRINGs.
+-The language reference manual is now available as XML+CSS (which can be displayed in modern web browsers) with hyperlinked crossreferences (using XLINK).
+-The Hercules default character set is supported.
+-Various low-level I/O improvements, particularly to support for TSO terminals and in changes to the defaults for unit record and DASD output.
+Last updated: 2013 March 3
+
+
+
+
+         
 The software is supplied either:
 
 a) as a zipped file containing an AWS tape file and this README file;
