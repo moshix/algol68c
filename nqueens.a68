@@ -1,0 +1,43 @@
+//QUEENS JOB 1,'QUEENS',CLASS=A,MSGCLASS=H,MSGLEVEL=(1,1)
+//QUEENS EXEC A68CCG
+//A68.SYSIN DD *
+BEGIN
+
+  COMMENT Classic backtracking algorithm - 'n' queens on a board.
+          ALGOL68C, Marcel van der Veer.
+  COMMENT
+
+  INT rows = 8;
+  [1 : rows] INT column, INT sols found := 0;
+
+  PROC place from = (INT this row) VOID:
+    IF this row > rows # placed all queens #
+    THEN sols found +:= 1
+    ELSE FOR i TO rows
+         DO IF BOOL safe := TRUE;
+               FOR j TO this row - 1
+               WHILE safe
+               DO IF column[j] = i                  # Horizontal     #
+                  THEN safe := FALSE
+                  ELIF column[j] - i = this row - j # Left diagonal  #
+                  THEN safe := FALSE
+                  ELIF column[j] - i = j - this row # Right diagonal #
+                  THEN safe := FALSE
+                  FI
+               OD;
+               safe
+            THEN column[this row] := i;    # Place queen here        #
+                 place from (this row + 1) # Place next to the right #
+            FI
+         OD
+    FI;
+
+  place from (1);
+
+  print ("Rows=", whole (rows, 0),
+         ", solutions=", whole (sols found, 0), new line)
+
+END
+/*
+//
+
