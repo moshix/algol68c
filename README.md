@@ -1,10 +1,13 @@
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fmoshix%2Falgol68c&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=true)](https://hits.seeyoufarm.com)
 
-(I am maintaining this repository for historical preservation purposes because
+I am maintaining this repository for historical preservation purposes because
 the original bitbucket repo can no longer be directly found. I contributed nothing
-to this compiler. --Moshix)
+to this compiler.
+
+By the way, the S.R. Bourne mentioned below is THE Bourne of the you-know-what shell. 
 
 
+    
 
 
 Algol68C Release 1.3039 for IBM System/370-compatible mainframes
@@ -196,3 +199,5 @@ AWS format, whereas individual datasets (other than the first) on the
 distribution tape are packed using the modified AWS format.
 
 </pre>
+  
+Moshix, May 2024, Antwerp, Belgium  
